@@ -3,6 +3,7 @@ import { HeroSection } from '@/components/HeroSection'
 import { WhyChooseUs } from '@/components/WhyChooseUs'
 import { BlogPreviewSection } from '@/components/BlogPreview'
 import { ClientReviewsSection } from '@/components/ClentReviewsSection'
+import { VideoPlaceholder } from '@/components/VideoPlaceholder'
 
 const ModernDentalHomepage = () => {
   const treatments = [
@@ -46,6 +47,7 @@ const ModernDentalHomepage = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <VideoPlaceholder className="w-1/2 m-auto my-10" />
       <HeroSection treatments={treatments} />
       <WhyChooseUs />
       <BlogPreviewSection />
